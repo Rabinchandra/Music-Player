@@ -1,14 +1,17 @@
 const playBtn = document.querySelector(".play-btn");
 const prevBtn = document.querySelector(".fa-backward");
 const nextBtn = document.querySelector(".fa-forward");
+
 const audio = document.querySelector("audio");
 const cover = document.querySelector(".music-cover img");
+const musicInfo = document.querySelector(".music-info");
+
 const progressContainer = document.querySelector(".progress-container");
 const progressEl = document.querySelector(".progress");
 const progressBar = document.querySelector(".progress div");
-const musicInfo = document.querySelector(".music-info");
 
 const songs = ["ukulele", "hey", "summer"];
+
 let songIndex = 0;
 
 // Load song
