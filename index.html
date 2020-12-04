@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h2 class="header">My Music Player</h2>
+    <div class="main">
+      <section class="progress-container">
+        <div class="music-info">Song</div>
+        <div class="progress">
+          <div></div>
+        </div>
+      </section>
+
+      <audio src="./music/ukulele.mp3"></audio>
+
+      <section class="music-container">
+        <div class="music-cover">
+          <img src="./img/ukulele.jpg" alt="" />
+          <div class="circle"></div>
+        </div>
+
+        <div class="navigation">
+          <div>
+            <i class="fas fa-backward action-btn"></i>
+          </div>
+          <div>
+            <i class="fas fa-play action-btn action-btn-lg play-btn"></i>
+          </div>
+          <div>
+            <i class="fas fa-forward action-btn"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <script src="./app.js"></script>
+</html>

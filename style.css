@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  /* border: 1px dotted red; */
+}
+
+body {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(rgb(252, 236, 238), rgb(252, 252, 252));
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header {
+  margin-top: 180px;
+  margin-bottom: 120px;
+  top: -60px;
+}
+
+.main {
+  width: 70%;
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+.progress-container {
+  height: 85px;
+  width: 90%;
+  border-radius: 12px 12px 0px 0px;
+  background: rgba(255, 244, 244, 0.5);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  transition-duration: 0.5s;
+  transition-property: opacity, margin-top;
+  padding-left: 150px;
+  text-align: left;
+}
+
+.play {
+  margin-top: -70px;
+  opacity: 1;
+}
+
+.progress {
+  width: 90%;
+  height: 7px;
+  background: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.progress div {
+  background: rgb(243, 87, 113);
+  height: 100%;
+  border-radius: 12px;
+  width: 0px;
+  transition: 0.2s ease-out;
+}
+
+.music-info {
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+.music-container {
+  margin: auto;
+  height: 100px;
+  border-radius: 12px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+}
+
+.music-cover {
+  width: 120px;
+  position: relative;
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-cover img {
+  width: 100%;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  animation: rotate 5s linear infinite;
+  animation-play-state: paused;
+}
+
+.rotate {
+  animation-play-state: running !important;
+}
+
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+  flex: 0.8;
+}
+
+.action-btn {
+  color: rgb(87, 87, 87);
+  cursor: pointer;
+}
+
+.action-btn:not(.action-btn-lg) {
+  font-size: 20px;
+}
+
+.action-btn-lg {
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 100%;
+  }
+}
